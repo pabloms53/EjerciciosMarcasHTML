@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+    table.class1{
+        border-color:red;
+        border-width:2px;
+        border-collapse:collapse;
+    }
+    table.class2{
+        border-color:green;
+        border-width:2px;
+        border-collapse:separate;
+    }
+    tr, td{
+        border-color:black;
+        padding:3px;
+    }
+    th.class1{
+        border:none;
+    }
+    
+    </style>
+</head>
+<body>
+    <table class="class1" border="1">
+        <thead>
+            <tr>
+                <th colspan="2">border- collapse: collapse</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Borde de tabla rojo</td>
+                <td>Borde de celda negro</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="class2" border="1">
+        <thead class="class1">
+            <tr>
+                <th class="class1" colspan="2">Border-collapse: separate</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Borde de tabla verde</td>
+                <td>Borde de celda negro</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
